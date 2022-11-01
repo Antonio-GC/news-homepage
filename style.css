@@ -9,13 +9,12 @@
   --Off-white: hsl(36, 100%, 99%);
   --Grayish-blue: hsl(233, 8%, 79%);
   --Dark-grayish-blue: hsl(236, 13%, 42%);
-  --gray-number:#D0CECF;
+  --gray-number: #d0cecf;
   --Very-dark-blue: hsl(240, 100%, 5%);
 }
 
 body {
   font-family: 'Inter', sans-serif;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,15 +33,15 @@ button {
 }
 
 .container {
-  height: 85%;
-  width: 55%;
+  height: 100%;
+  width: 70%;
 }
 
 .nav--container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15%;
+  height: 12%;
 }
 
 .nav-logo img {
@@ -92,7 +91,7 @@ button {
 }
 
 .contianer-action {
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.1rem;
   padding: 20px;
   color: var(--Dark-grayish-blue);
@@ -109,13 +108,11 @@ button {
 .container-aside {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  height: 85%;
+  height: 90%;
   justify-content: space-between;
-
   background-color: var(--Very-dark-blue);
   color: var(--Off-white);
-  font-size: 11px;
+  font-size: 12px;
   padding: 20px;
   line-height: 1.3rem;
 }
@@ -129,20 +126,16 @@ button {
   color: var(--Dark-grayish-blue);
 }
 
-.aside-header {
+.aside-card {
   padding-bottom: 20px;
   border-bottom: var(--Dark-grayish-blue) solid 0.2px;
 }
 
-.aside-main {
-  padding-bottom: 20px;
-  border-bottom: var(--Dark-grayish-blue) solid 0.2px;
-}
 
 .container-article {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 44%;
+  height: 15%;
   line-height: 1.1rem;
   font-size: 11px;
   gap: 10px;
@@ -157,41 +150,23 @@ button {
   color: var(--gray-number);
 }
 
-.container-article 
-p {
+.container-article p {
   color: var(--Dark-grayish-blue);
 }
 
-.retro-pc {
+.card-info {
   display: flex;
   gap: 10px;
   padding: 10px;
+  height: 40%;
 }
 
-.retro-pc img {
+.card-info img {
   object-fit: cover;
-  height: 80%;
+  height: 100%;
 }
 
-.top-laptop {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
-}
 
-.top-laptop img {
-  object-fit: cover;
-  height: 80%;
+.card-article {
+  height: 100%;
 }
-
-.gaming-growth {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
-}
-
-.gaming-growth img {
-  object-fit: cover;
-  height: 80%;
-}
-
