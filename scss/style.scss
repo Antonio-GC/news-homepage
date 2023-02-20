@@ -1,4 +1,6 @@
 @import"config";
+@import"tipografia";
+@import"wrapper";
 
 
 
@@ -13,7 +15,7 @@ html {
 }
 
  body {
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: 'Inter', sans-serif;
   }
 
 a {
@@ -38,3 +40,55 @@ max-width: 100%;
     max-width: 1280px;
     width: 100%;
   }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+  }
+
+  .section__title {
+    font-size: 3rem;
+    color:$Very-dark-blue;
+    margin: 1rem 0;
+
+  }
+
+  .section__text {
+    @extend %text;
+    margin: 1rem 0;
+  }
+
+  .btn__section {
+    color: $Off-white;
+    background-color: $Soft-red;
+    padding: 1rem 2.5rem;
+    margin: 1rem 0;
+  }
+
+  .aside__info {
+    @extend %container;
+    display: grid;
+    row-gap: 1rem;
+    background-color: $Very-dark-blue;
+    margin: 2rem 0;
+  }
+.aside__box {
+  border-bottom: $Off-white solid .1rem;
+}
+  .info__title {
+    @extend %title;
+    color: $Soft-orange;
+  }
+
+  .info__sub-title {
+    @extend %sub-title;
+    color: $Off-white;
+  }
+
+  .info__text {
+    @extend %text;
+    margin-bottom: 2rem;
+  }
+
